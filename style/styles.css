@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* --------------navbar design-------------------------------------- */
+
+
+.top-item{
+  width: 100%;
+  /* border: 1px solid red; */
+  background-color: #1A0B2E;
+  padding: 30px 0px;
+}
+.navbar{
+  width: 60%;
+  max-width: 1200px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo img{
+  width: 219px;
+}
+.nav-menu .menu{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav-menu .menu li{
+  margin-right: 32px;
+}
+.nav-menu .menu li a{
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12.5px 16px;
+  border-radius: 30px;
+  border: none;
+  background-image: linear-gradient(30deg, #F7E93F, #FB09B4, #9100F8);
+  color: #ffffff;
+}
+.btn p{
+  display: inline-block;
+}
+.btn img{
+  display: none;
+}
+
+/* -------------------------------mobile screen navbar------------------------------ */
+
+@media screen and (max-width:576px) { 
+  .top-item{
+  padding: 20px;
+  }
+  .navbar{
+  width: 100%;
+  }
+  .nav-menu .menu{
+    display: none;
+  }
+  .btn{
+    background: none;
+  }
+  .btn p{
+    display: none;
+  }
+  .btn img{
+    display: block;
+  }
+  .btn i{
+    display: none;
+  }
+ 
+}
+
+
+/* --------------------------banner section design------------------------------ */
+
+
+.banner{
+  width: 100%;
+  background-image: url(../assets/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0px;
+
+}
+.banner-content{
+  width: 60%;
+  max-width: 550px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-top{
+  width: 100%;
+  margin-bottom: 40px;
+  background-image: url(../assets/hero-circle.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+}
+.banner-top img{
+  margin: 70px 75px;
+  padding-left: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn2{
+  position: relative;
+  top: -250px;
+  background-color: #00FF88;
+  padding: 8px 16px;
+  color: black;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  margin-left: -40px;
+  box-shadow: 0px 0px 20px 0px #00ff88af;
+}
+.banner-bottom{
+  width: 100%;
+}
+.banner-bottom h2{
+  font-size: 60px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.banner-bottom p{
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 24px;
+  font-weight: 200;
+}
+.btn3{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12.5px 16px;
+  border-radius: 30px;
+  border: 2px solid #00FF88;
+  color: #00FF88;
+  background: none;
+}
+.btn3 img{
+  margin-right: 8px;
+}
+.btn4 i{
+ margin-right: 8px;
+ font-size: 18px;
+}
+
+
+
+/* --------------------------mobile screen banner------------------------------ */
+@media screen and (max-width:576px) {
+  .banner{
+      width: 500px;
+      /* height: 100vh; */
+      background-image: url(../assets/hero-bg.png);
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 10px 0px;
+
+    }
+  
+  .banner-content{
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid red;
+      margin: 0 auto;
+      text-align: center;
+  }
+  .banner-top{
+      width: 400px;
+      margin-bottom: 40px;
+      background-image: url(../assets/hero-circle.png);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+    }
+    .btn4{
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12.5px 16px;
+      border-radius: 30px;
+      border: none;
+      background-image: linear-gradient(30deg, #F7E93F, #FB09B4, #9100F8);
+      color: #ffffff;
+    }
+    .btn4 i{
+      display: inline-block;
+    }
+}
