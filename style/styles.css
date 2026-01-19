@@ -558,3 +558,42 @@ footer p{
 .links img{
   margin-right: 10px;
 }
+
+
+
+/* -------------mobile screen footer--------------- */
+
+@media screen and (max-width:576px) {
+  footer{
+  width: 100%;
+      
+      background-image: url(../assets/footer-bg.png);
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 40px 20px;
+  text-align: center;
+  color: white;
+  /* padding-bottom: 60px; */
+  /* padding: 0 40px; */
+}
+
+.footer-text{
+  width: 450px;
+  margin-bottom: 50px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.social-links{
+  width: 450px;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+.footer-text img{
+  width: 300px;
+}
+.footer-text .links img{
+  width: 24px;
+  /* margin-right: 10px; */
+}
+}
