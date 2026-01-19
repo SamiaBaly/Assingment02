@@ -511,3 +511,50 @@
   margin-bottom: 20px;
 }
 }
+
+/* -----------footer section design--------------- */
+
+footer{
+  width: 100%;
+  background-image: url(../assets/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 120px;
+  color: white;
+}
+
+footer p{
+  font-size: 16px ;
+  font-weight: 100;
+}
+.footer-text{
+  width: 60%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-text img{
+  width: 410px;
+}
+.social-links{
+  width: 514px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.social-links img{
+  width: 24px;
+  /* height: 24px; */
+}
+.links{
+  display: flex;
+  color: white;
+  padding-bottom: 32px;
+  font-size: 16px;
+}
+.links img{
+  margin-right: 10px;
+}
