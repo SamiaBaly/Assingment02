@@ -8,6 +8,39 @@
   font-family: "Inter", sans-serif;
 }
 
+.animation{
+  width: 50px;
+  height: 50px;
+  background-color:#9100f853;
+  border-radius: 50%;
+  position: relative;
+  animation: safwan 3s ease-in-out 1s infinite alternate ;
+  
+}
+
+@keyframes safwan {
+  0%{
+    top:0;
+    left: 0;
+  }
+  25%{
+    left: 400px;
+    top: 500px;
+  }
+  50%{
+    left: 800px;
+    top: 0;
+  }
+  75%{
+    left: 1200px;
+    top: 700px;
+  }
+  100%{
+    left: 1600px;
+    top: 0;
+  }
+}
+
 /* --------------navbar design-------------------------------------- */
 
 
